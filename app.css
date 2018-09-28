@@ -1,0 +1,73 @@
+
+.app{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    max-height: 500px;
+    border: 1px solid #000;
+}
+
+.app-scroll{
+    overflow-y: scroll;
+}
+
+.app-row{
+    display: flex; 
+    flex-flow: row; 
+    justify-content: space-between;
+    margin: 1em 0px;
+}
+
+.app-column-element{
+    display: flex; 
+    flex-flow: column;
+}
+
+.disable-border{
+    margin-left: 5px;
+    border: 0 solid #fff;
+    outline: none;
+}
+
+.trafic-light{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 40%;
+}
+
+
+.trafic-signal{
+    width: 30%;
+    margin: 5px;
+}
+
+.trafic-signal-red{background-color: red;}
+.trafic-signal-yellow{background-color: yellow;}
+.trafic-signal-green{background-color: green;}
+
+.trafic-signal-selected{
+}
+
+.trafic-signal-selected::before{
+    content: "";
+    background-color: blue;
+    position: relative;
+    left: -3px;
+    top: -3px;
+    width: calc(100% + 6px);
+    display: flex;
+    height: calc(100% + 6px);
+}
+
+.trafic-signal-selected::after{
+    content: "";
+    display: flex;
+    background-color: inherit;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    position: relative;
+    top: calc( -100% - 5px);
+    /* top: -2px; */
+    left: 1px;
+}
