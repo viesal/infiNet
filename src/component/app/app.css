@@ -1,0 +1,29 @@
+.app{
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    max-height: 500px;
+    border: 1px solid #000;
+}
+
+.app-scroll{
+    overflow-y: scroll;
+}
+
+.app-row{
+    display: flex; 
+    flex-flow: row; 
+    justify-content: space-between;
+    margin: 1em 0px;
+}
+
+.app-column-element{
+    display: flex; 
+    flex-flow: column;
+}
+
+.disable-border{
+    margin-left: 5px;
+    border: 0 solid #fff;
+    outline: none;
+}
