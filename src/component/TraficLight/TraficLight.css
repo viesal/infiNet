@@ -1,0 +1,7 @@
+.trafic-light{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 40%;
+}
+
